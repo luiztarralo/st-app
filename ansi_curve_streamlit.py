@@ -14,6 +14,7 @@ def main():
             else: time[i] = tds * (a + (b / (mult_curr[i]**p - 1))) # Tempo de trip 
         return time 
     st.write('Overcurrent Relay Curve ANSI 51 Plotter App')
+    st.write('Made by Luiz A. Tarralo Passatuto)
     tds = st.number_input('Enter the Time Dial Setting (TDS)', min_value=0.5, max_value=15.0, value=1.0, step=0.5) # Ask the user to input the time dial setting
     mult_curr = np.arange(1, 100, 0.5) # Múltiplos da corrente nominal
     time_values_us_mi = calculate_time(tds, mult_curr, 0.2256, 0.0104, 1.08, 0.02) # US Moderately Inverse
