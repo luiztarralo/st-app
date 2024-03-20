@@ -35,8 +35,7 @@ def calculate_time(tds, mult_curr, a, b, c, p):
     return time 
 
 def main():
-    st.write('Overcurrent Relay Curve ANSI 51 Plotter App')
-    st.write('Made by Luiz A. Tarralo Passatuto', \n ,'Last update March 20 2024')
+    st.write('Overcurrent Relay Curve ANSI 51 Plotter App  \nMade by Luiz A. Tarralo Passatuto  \nLast update March 20 2024')
     tds = st.number_input('Enter the Time Dial Setting (TDS)', min_value=0.5, max_value=15.0, value=1.0, step=0.5)
 
     # Selection list for the user to choose the curve
